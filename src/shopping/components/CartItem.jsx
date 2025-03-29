@@ -27,7 +27,6 @@ const CartItem = ({
         <p className="text-lg text-gray-300">Rs. {price}</p>
         <div id="card-footer" className="flex gap-4 mt-4 items-center">
           <button
-            onClick={() => dispatch(decrementQuantity({id}))}
             className="p-2 rounded-lg  bg-gray-800 hover:bg-gray-600 cursor-pointer"
           >
             {quantity == 1 ? <Trash color='red' size={16} /> : <Minus size={16} />}
